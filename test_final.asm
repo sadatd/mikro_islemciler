@@ -1,0 +1,12 @@
+LDA 0000H
+ANI 00000001B
+CZ hallo
+LXI D, 08H
+HLT
+CNZ hi
+HLT
+hallo: LXI B, 0H
+RET
+HLT
+hi: LXI B, 06H
+HLT

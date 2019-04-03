@@ -1,0 +1,26 @@
+MVI A,05H
+MVI B,02H
+MVI C,06H
+
+CALL label1
+CALL label2
+STA 0006H
+
+HLT
+
+label1: MOV D,A
+PUSH D
+
+MOV A,C
+ADD B
+MVI D,08H
+
+STA 0005H
+
+POP D
+MOV A,D
+RET
+
+label2: MVI L,05H
+ADD L
+RET

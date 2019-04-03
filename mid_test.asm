@@ -1,0 +1,4 @@
+MVI B, 00H
+MVI C, 06H
+MOV A, M
+HLT
